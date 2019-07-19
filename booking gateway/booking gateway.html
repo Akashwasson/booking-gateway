@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			
+			#title{
+				background-color: #1280ed;
+				text-align: top;
+				vertical-align: baseline;
+				
+			}
+			h1{
+				color:white;
+				padding: 10px;
+				margin-left: 100px
+			}
+			
+			#myAlign{
+				margin-left: 100px;
+			}
+			
+			legend{
+				font-weight: bold;
+				font-style: italic;
+			}
+			table, th, td{
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+			
+			#displayBooking{
+				display: none;
+			}
+
+			table {
+				font-family: arial, sans-serif;
+				border-collapse: collapse;
+				width: 100%;
+			}
+
+			td, th {
+				border: 1px solid #dddddd;
+				text-align: left;
+				padding: 8px;
+			}
+
+			tr:nth-child(even) {
+				background-color: #dddddd;
+			}
+		</style>
+		
+	</head>
+	<body>
+
+	<div id="title">
+	<h1>Marlin Travel Romantic Getaway Promotion</h1>
+	</div>	
+
+<div id="myAlign">
+
+	<form id="form1">
+		<fieldset id="guests">
+		<legend>Enter guests' names</legend>
+		<input type="text" id="names" size="50" name="guests" value="" />
+		</fieldset> <br />
+		
+		<fieldset id="destination">
+		<legend>Select your destination</legend>
+		<input type=radio id="loc1" name="getAwayDestination"	value="Nassau - The Bahamas" />Nassau - The Bahamas <br />
+		<input type=radio id="loc2" name="getAwayDestination"	value="Cancun - Mexico" />Cancun - Mexico <br />
+		<input type=radio id="loc3" name="getAwayDestination"	value="Punta Cana - Dominican Republic" />Punta Cana - Dominican Republic <br />
+		<input type=radio id="loc4" name="getAwayDestination"	value="Montego Bay - Jamaica" />Montego Bay - Jamaica <br />
+		<input type=radio id="loc5" name="getAwayDestination"	value="Waikiki - Oahu, Hawaii" />Waikiki - Oahu, Hawaii<br />
+		<input type=radio id="loc6" name="getAwayDestination"	value="Wailea - Maui, Hawaii" />Wailea - Maui, Hawaii<br />
+			
+		</fieldset> <br />
+		
+		<fieldset id="rooms">
+		<legend>Please select your desired room type</legend>
+		<select id="roomType">
+		   <option value="">Select room type</option>
+		   <option value="Queen bed room">Queen-bed room (daily rate)</option>
+		   <option value="King bed room">King-bed room (+$20)</option>
+		   <option value="Two queen bed room">Two queen-beds room(+$40)</option>
+			
+		</select>
+			
+		</fieldset> <br />
+		
+		<fieldset id="roomLocation">
+		<legend>Please select your desired room location</legend>
+		<select id="roomLoc">
+		   <option value="">Select room location</option>
+		   <option value="Garden/hotel view">Garden/hotel view (daily rate)</option>
+		   <option value="Ocean view">Ocean view (+$25)</option>
+		   <option value="Oceanfront">Oceanfront (+$50)</option>
+			
+		</select>
+			
+		</fieldset> <br />
+	
+			
+		<fieldset id="stayLenth">
+		<legend>Please select your desired duration of stay</legend>
+		<select id="duration">
+		   <option value="">Select duration of stay</option>
+		   <option value="3 days">3 days (5% discount)</option>
+		   <option value="5 days">5 days (7.5% discount)</option>
+		   <option value="7 days">7 days (10% discount)</option>
+			
+		</select>
+			
+		</fieldset> <br />
+		
+		<fieldset id="activities">
+			<legend>Please select activities you want to add to your package</legend>
+			<input type="checkbox" id="pickup" name="activity" value=125 />Airport pick-up/drop-off ($125)<br />				
+			<input type="checkbox" id="dinner" name="activity" value=150 />Romantic dinner for two ($150) <br />
+			<input type="checkbox" id="photos" name="activity" value=550 />Professional photo session ($350)<br />
+			
+		</fieldset> <br />
+		
+		<fieldset id="buttons">
+			<input type="reset" name="reset" id="btnReset" value="Reset" /> &nbsp;&nbsp;
+			<input type="button" name="submit" id="btnSubmit" value="Book Your Getaway" />
+		</fieldset>
+		
+	</form>  <br />
+	
+	<div id="displayBooking">
+			<h2>Booking Summary</h2>
+	
+	<table id="bookingSummary"></table>
+	
+	<p><a href="#" id="displayForm" >Display form</a> </p><br /><br />
+	</div>
+
+</div>
+	
+	<script src="scripts/participating-hotels.js">
+	
+	</script>
+	<script src="scripts/myscript.js"></script>
+
+	
+	</body>
+</html>
